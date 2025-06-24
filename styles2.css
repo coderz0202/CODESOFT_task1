@@ -1,0 +1,398 @@
+body {
+  background-color: rgb(226, 222, 222);
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4px 2rem 0 2rem;
+  position: fixed;
+  width: 95vw;
+  z-index: 1000;
+  background-color: rgb(243, 235, 235);
+
+  img {
+    border-radius: 30px;
+  }
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a:link {
+    color: rgb(15, 197, 15);
+  }
+
+  a:hover {
+    color: rgb(25, 179, 171);
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out 0.2s;
+  }
+
+  a:visited {
+    color: rgb(15, 197, 15);
+  }
+
+  button {
+    padding: 0.6rem;
+    color: white;
+    background-color: rgb(15, 197, 15);
+    border-radius: 10px;
+  }
+}
+
+.hero {
+  height: 90vh;
+  position: relative;
+  padding-top: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  button {
+    background-color: rgb(222, 238, 198);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -80px;
+
+    h2 {
+      color: rgb(156, 154, 154);
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      background-color: rgb(60, 173, 37);
+    }
+
+    .about-button {
+      display: flex;
+      gap: 40px;
+      justify-content: space-between;
+    }
+  }
+
+  .hero-pic {
+    padding-top: 50px;
+  }
+}
+
+#home {
+  padding-top: 90px;
+}
+
+img {
+  border-radius: 30px;
+  box-shadow: 5px 5px 8px rgb(83, 250, 111);
+}
+
+span {
+  color: rgb(5, 231, 5);
+}
+
+#about-me {
+  text-align: center;
+  font-weight: 900px;
+  color: rgb(48, 47, 47);
+  font-size: 1.6rem;
+  margin-bottom: 100px;
+}
+
+.about-me-content {
+  background-color: rgb(230, 230, 226);
+  height: 40vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
+.info {
+  text-align: left;
+  font-size: 1rem;
+  display: grid;
+}
+
+.personal {
+  margin-bottom: 0;
+
+  padding-bottom: 0px;
+}
+
+.info-desc {
+  line-height: 30px;
+  span {
+    color: rgb(141, 136, 136);
+  }
+}
+
+.info-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0px;
+
+  padding-top: 0px;
+}
+
+.achieve p {
+  font-size: 1.2rem;
+  color: rgb(80, 79, 77);
+}
+
+.achieve {
+  padding: 10px 30px 30px 30px;
+}
+
+.progress-container {
+  width: 200%;
+  background-color: #f1baba;
+  border-radius: 25px;
+  height: 25px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  height: 20%;
+}
+
+.progress-bar {
+  height: 20%;
+  background-color: #46bb4a;
+  text-align: center;
+  color: rgb(247, 243, 243);
+  line-height: 14px;
+  font-weight: bold;
+  transition: width 0.3s ease;
+}
+
+.one {
+  width: 90%;
+}
+
+.two {
+  width: 70%;
+}
+
+.three {
+  width: 80%;
+}
+
+.four {
+  width: 60%;
+}
+
+.five {
+  width: 40%;
+}
+
+.six {
+  width: 60%;
+}
+#skills h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: rgb(54, 51, 51);
+}
+
+.skill-container {
+  width: 90%;
+  margin: auto;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+
+  h3 {
+    color: rgb(105, 100, 100);
+  }
+}
+
+#projects {
+  height: 90vh;
+  h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: rgb(29, 25, 25);
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.project-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  color: rgb(68, 68, 68);
+  background-color: rgb(216, 219, 223);
+}
+
+.project-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: rgb(29, 25, 25);
+  }
+}
+
+.social-links {
+  font-size: 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  padding: 0;
+  margin: 0 0.75rem;
+}
+
+.social-links i {
+  color: #588061;
+  font-weight: 500;
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: rgb(32, 29, 24);
+  background-color: rgb(189, 192, 191);
+  height: 8vh;
+}
+
+@media (max-width:750px){
+    #header{
+        display:flex;
+        justify-content:space-evenly;
+        font-size: 0.9rem;
+        padding-left: 1px;
+
+        
+        .header-links{
+            display:flex;
+            gap:8px;
+            justify-content: center;
+    
+        }
+        a:hover{
+            transform: scale(1);
+        }
+    }
+
+    
+}
+
+@media (max-width:700px)
+{
+    
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top:100px;
+        
+
+        h1{
+            font-size: 2rem;
+        }
+    }
+
+    #about-me{
+        position: relative;
+        top:10rem;
+    }
+
+    .about-me-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top:5rem;
+        height:60vh;
+
+        h2{
+            text-align: center;
+        }
+        
+
+    
+    }
+
+    .project-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+    #skills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top:10rem;
+    }
+
+    #projects{
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top:35rem;
+
+    }
+
+    #contact{
+        position:relative;
+        top:60rem;
+    }
+
+    .footer{
+        position: relative;
+        top:60rem;
+    }
+}
+
